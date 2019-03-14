@@ -27,6 +27,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.allandroidprojects.ecomsample.R;
@@ -89,6 +90,9 @@ public class ImageListFragment extends Fragment {
 
         public static class ViewHolder extends RecyclerView.ViewHolder {
             public final View mView;
+            public final TextView mItemNameTextView;
+            public final TextView itemDescriptionTextView;
+            public final TextView itemPriceTextView;
             public final SimpleDraweeView mImageView;
             public final LinearLayout mLayoutItem;
             public final ImageView mImageViewWishlist;
@@ -96,6 +100,9 @@ public class ImageListFragment extends Fragment {
             public ViewHolder(View view) {
                 super(view);
                 mView = view;
+                mItemNameTextView = view.findViewById(R.id.itemNameTextView);
+                itemDescriptionTextView = view.findViewById(R.id.itemDescriptionTextView);
+                itemPriceTextView = view.findViewById(R.id.itemPriceTextView);
                 mImageView = view.findViewById(R.id.image1);
                 mLayoutItem = view.findViewById(R.id.layout_item);
                 mImageViewWishlist = view.findViewById(R.id.ic_wishlist);

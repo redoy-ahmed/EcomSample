@@ -1,20 +1,4 @@
-/**
- * ****************************************************************************
- * Copyright 2011, 2012 Chris Banes.
- * <p/>
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * <p/>
- * http://www.apache.org/licenses/LICENSE-2.0
- * <p/>
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- * *****************************************************************************
- */
+
 package com.allandroidprojects.ecomsample.fragments;
 
 import android.app.Activity;
@@ -30,14 +14,6 @@ import android.view.ViewGroup.LayoutParams;
 import com.allandroidprojects.ecomsample.R;
 import com.allandroidprojects.ecomsample.photoview.view.PhotoView;
 import com.allandroidprojects.ecomsample.utility.ImageUrlUtils;
-
-/**
- * Lock/Unlock button is added to the ActionBar.
- * Use it to temporarily disable ViewPager navigation in order to correctly interact with ImageView by gestures.
- * Lock/Unlock state of ViewPager is saved and restored on configuration changes.
- *
- * Julia Zudikova
- */
 
 public class ViewPagerActivity extends Activity {
 
